@@ -111,3 +111,95 @@
 #  print(f"The number of primes in the list of integers : {prime_numbers(mass)}")
 # except ValueError as error:
 #   print(error)
+
+# Завдання 4
+# Напишіть функцію, яка видаляє зі списку ціле задане число. З функції потрібно повернути кількість видаленних елементів.
+# try:
+#  def delete_number(numbers, number_to_delete):
+#    count = 0
+#    for i in numbers.copy():
+#      if i == number_to_delete:
+#        numbers.remove(i)
+#        count += 1
+#    return count
+#  initial_numbers = [int(s) for s in input("Enter whole numbers separated by spaces : ").split()]
+#  number = int(input("Enter the number you want to delete : "))
+#  print(f'Number of numbers removed : {delete_number(initial_numbers, number)}')
+#  print(f"Remaining numbers : {initial_numbers}")
+# except ValueError as error:
+#   print(error)
+
+# v2
+# try:
+#  def delete_number(numbers, number_to_delete):
+#    count = 0
+#    for i in numbers.copy():
+#      if i == number_to_delete:
+#        numbers.remove(i)
+#        count += 1
+#    return count
+#  initial_numbers = [1, 2, 3, 3, 3, 4, 5]
+#  number = (3)
+#  print(f'Number of numbers removed : {delete_number(initial_numbers, number)}')
+#  print(f"Remaining numbers : {initial_numbers}")
+# except ValueError as error:
+#   print(error)
+
+# Завдання 5
+# Напишіть функцію, яка отримує два списки як параметр і повертає список, що містить елементи обох списків.
+# try:
+#  def combine_scroll(scroll1, scroll2):
+#   combined = scroll1 + scroll2
+#   return combined
+#  scroll1 = [int(s) for s in input("Enter whole numbers separated by spaces : ").split()]
+#  scroll2 = [int(s) for s in input("Enter whole numbers separated by spaces : ").split()]
+#  combined_list = combine_scroll(scroll1, scroll2)
+
+#  print(f"First list : {scroll1}")
+#  print(f"Second list : {scroll2}")
+#  print(f"List Combination Result : {combined_list}")
+# except ValueError as error:
+#   print(error)
+
+# v2
+# try:
+#  def combine_scroll(scroll1, scroll2):
+#   combined = scroll1 + scroll2
+#   return combined
+#  scroll1 = [1, 2, 3, 4, 5]
+#  scroll2 = [6, 7, 8, 9, 10]
+#  combined_list = combine_scroll(scroll1, scroll2)
+#  print(f"First list : {scroll1}")
+#  print(f"Second list : {scroll2}")
+#  print(f"List Combination Result : {combined_list}")
+# except ValueError as error:
+#   print(error)
+
+# Завдання 6
+# Напишіть функцію, яка обчислює ступінь кожного елемента списку цілих. Значення для ступеня передається як параметр, список також передається як параметр. Функція повертає новий список, який містить отримані результати.
+# try:
+#  def produce_a_degree(scroll, degree):
+#   result = []
+#   for i in scroll:
+#     result.append(i**degree)
+#   return result
+
+#  numbers = [int(s) for s in input("Enter whole numbers separated by spaces : ").split()]
+#  degrees = produce_a_degree(numbers, 3)
+#  print(f"Result of exponentiation {degrees}")
+# except ValueError as error:
+#   print(error)
+
+# v2
+# try:
+#  def produce_a_degree(scroll, degree):
+#   result = []
+#   for i in scroll:
+#     result.append(i**degree)
+#   return result
+
+#  numbers = [1, 2, 3, 4, 5]
+#  degrees = produce_a_degree(numbers, 3)
+#  print(f"Result of exponentiation {degrees}")
+# except ValueError as error:
+#   print(error)
